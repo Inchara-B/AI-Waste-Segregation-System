@@ -1,27 +1,51 @@
-# AI Powered Waste Segregation and Monitoring System
+# ♻️ AI Powered Waste Segregation and Monitoring System for Smart Cities
 
-This project uses YOLOv8 deep learning model trained on the TACO dataset 
-to detect and classify waste into categories:
+This project combines **AI + IoT** for smart waste management.
 
-- Organic
-- Recyclable
-- Other/Landfill
+---
 
-It also integrates IoT-based smart bin monitoring using ultrasonic sensors.
+## 📌 Overview
 
-## Features
-- Waste detection using YOLOv8
-- Streamlit-based web interface
-- Smart bin overflow alert system (Arduino + HC-SR04)
+- Waste detection using **YOLOv8**
+- Streamlit dashboard for classification
+- Smart bin monitoring using ultrasonic sensor + buzzer
 
-## Tech Stack
-- Python, YOLOv8, Streamlit
-- Arduino Uno, Ultrasonic Sensor
-- TACO Dataset
+---
 
-## How to Run
+## 🚀 Features
 
-1. Install requirements:
+- Detects waste into Organic / Recyclable / Other categories  
+- Real-time bin fill-level monitoring  
+- Overflow alert when bin exceeds 80%
+
+---
+
+## 🛠️ Tech Stack
+
+- Python, YOLOv8 (Ultralytics)
+- Streamlit, OpenCV
+- Arduino Uno, HC-SR04 Sensor
+
+---
+
+## 📂 Project Files
+
+- `app.py` → Streamlit application  
+- `best.pt` → Trained YOLOv8 model  
+- `requirements.txt` → Dependencies  
+- `images/` → Output screenshots  
+
+---
+
+## ⚙️ How to Run
 
 ```bash
 pip install -r requirements.txt
+streamlit run app.py
+```
+
+Open in browser:
+
+http://localhost:8501
+
+🎥 Hardware Demo: https://drive.google.com/file/d/1v44m-xrsctaaFlzyT0W-0_w-D3qzgeCy/view?usp=drive_link
